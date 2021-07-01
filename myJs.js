@@ -16,12 +16,10 @@ onkeyup = () => {
     preview.innerHTML = input.value;
     if (event.which === ENTER) {
         saveReminder();
-        location.reload();
     }
 
     if (event.which === DEL) {
         deleteReminders();
-        location.reload();
     }
 }
 
