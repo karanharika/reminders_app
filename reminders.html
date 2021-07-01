@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reminders</title>
+	<link rel="icon" href="https://image.flaticon.com/icons/svg/1792/1792931.svg">
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<script defer src="myJs.js"></script>
+	<link rel="stylesheet" href="./Stylesheet/design.css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<main>
+		<h1>Reminders</h1>
+		<p id="add-label"><label for="add-reminder">Add a new Reminder</label></p>
+		<div class="form-group">
+			<input type="text" id="add-reminder">
+			<button id="submit-reminder">Save</button>
+		</div>
+
+		<ul id="reminders">
+			<li class="reminder preview"></li>
+		</ul>
+		<button id="clear">Delete all Reminders</button>
+		<p class="notices">
+			<span class="notice"></span>
+		</p>
+	</main>
+	<button id="myBtn">Info</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <ul>
+		<li>Type in the remnders.</li>
+		<li>Press Enter key or Save button to save reminders.</li>
+		<li>Press Delete key or Delete all reminders button to delete all the reminders.</li>
+	</ul>
+  </div>
+
+</div>
+
+	<footer>
+		<p class="copy">&copy; 2021 Karanveer Harika</p>
+	</footer>
+</body>
+</html>
